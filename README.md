@@ -3,7 +3,7 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### About
 
--  :fire: **Learning :** Full-Stack Development | Machine-Learning  
+-  :fire: **Learning :** Full-Stack Development | Machine-Learning | Image Analysis & Processing |Computer Vision
 -  :computer: **Languages :** Python, Java, JavaScript, C++
 -  :swimmer: **Hobbies :** Painting, Running, Swimming
 -  :books: **Master :** Department of Engineering, École Nationale des Sciences Géographiques, France
