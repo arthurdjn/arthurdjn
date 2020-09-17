@@ -8,10 +8,10 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### About
 
--  :fire: **Learning :** Full-Stack Development | Machine-Learning | Image Analysis & Processing |Computer Vision
--  :computer: **Languages :** Python, Java, JavaScript, C++
+-  :fire: **Learning :** Full-Stack Development | Machine-Learning | Image Analysis | Computer Vision
+-  :computer: **Languages :** Python, JavaScript, C++
 -  :swimmer: **Hobbies :** Painting, Running, Swimming
--  :books: **Master :** Department of Engineering, École Nationale des Sciences Géographiques, France
+-  :books: **Engineering :** Department of Engineering, École Nationale des Sciences Géographiques, France
 -  :books: **Master :** Department of Computer Science and Mathematics, Universitetet i Oslo, Norway 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
