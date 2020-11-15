@@ -1,12 +1,8 @@
-
-
-
-### Arthur Dujardin <img src="https://raw.githubusercontent.com/hjnilsson/country-flags/master/png250px/no.png" height=15px /> <img src="https://raw.githubusercontent.com/hjnilsson/country-flags/master/png250px/fr.png" height=15px />
-[![Linkedin Badge](https://img.shields.io/badge/-arthurdujardin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/arthurdujardin//)](https://www.linkedin.com/in/arthur-dujardin-2a0659153/) [![Gmail Badge](https://img.shields.io/badge/-adujardin.contact@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:adujardin.contact@gmail.com)](mailto:adujardin.contact@gmail.com)
+[![Linkedin Badge](https://img.shields.io/badge/-arthurdujardin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/arthurdujardin//)](https://www.linkedin.com/in/arthur-dujardin-2a0659153/) 
+[![Gmail Badge](https://img.shields.io/badge/-adujardin.contact@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:adujardin.contact@gmail.com)](mailto:adujardin.contact@gmail.com)
 [![website](https://img.shields.io/badge/website-46a2f1.svg?&style=flat-square&logo=Google-Chrome&logoColor=white&link=https://anmolsingh.me/)](https://arthurdujardin.com)
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### About
+## Arthur Dujardin <img src="https://raw.githubusercontent.com/hjnilsson/country-flags/master/png250px/no.png" height=15px /> <img src="https://raw.githubusercontent.com/hjnilsson/country-flags/master/png250px/fr.png" height=15px />
 
 -  :fire: **Learning :** Full-Stack Development | Machine-Learning | Image Analysis | Computer Vision
 -  :computer: **Languages :** Python, JavaScript, C++
