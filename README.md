@@ -4,7 +4,7 @@
 
 ## Arthur Dujardin <img src="https://raw.githubusercontent.com/hjnilsson/country-flags/master/png250px/no.png" height=15px /> <img src="https://raw.githubusercontent.com/hjnilsson/country-flags/master/png250px/fr.png" height=15px />
 
-*Looking to shoot for the stars*
+*Shooting for the stars*
 
 -  :fire: **Learning :** Deep-Learning | Image Analysis | Computer Vision
 -  :computer: **Languages :** Python, JavaScript, C++
