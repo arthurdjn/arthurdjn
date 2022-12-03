@@ -1,0 +1,405 @@
+<!--
+File: noiseplanet.html
+Creation: Sunday July 5th 2020
+Author: Arthur Dujardin
+--------
+Copyright (c) 2020 Arthur Dujardin
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Arthur D.</title>
+
+        <!-- CSS Layouts -->
+        <link rel="stylesheet" href="../static/css/root.css" />
+        <link rel="stylesheet" href="../static/css/style.css" />
+        <link rel="stylesheet" href="../static/css/layout.css" />
+        <link rel="stylesheet" href="../static/css/fonts.css" />
+        <link rel="stylesheet" href="../static/css/colors.css" />
+        <link rel="stylesheet" href="../static/css/project.css" />
+        <link rel="stylesheet" href="../static/css/navbar.css" />
+        <link rel="stylesheet" href="../static/css/canvas.css" />
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Font Awesome -->
+        <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+        <!-- TweenMax -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+        <!-- Scrol Reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- Latex on HTML -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    </head>
+
+    <body>
+        <!-- Main NavBar -->
+        <header id="navbar" class="padding bg-white">
+            <!-- Logo -->
+            <ul>
+                <li><a href="../index.html" class="dark-grey">Arthur D.</a></li>
+            </ul>
+            <!-- Hamburger icon -->
+            <div id="nav-toggle">
+                <div class="nav-toggle-bar1 bg-dark-grey"></div>
+                <div class="nav-toggle-bar2 bg-dark-grey"></div>
+                <div class="nav-toggle-bar3 bg-dark-grey"></div>
+            </div>
+            <!-- Menu -->
+            <nav id="nav-menu">
+                <ul>
+                    <li>
+                        <a href="../index.html#portfolio" class="dark-grey">Work</a>
+                    </li>
+                    <li><a href="../about.html" class="dark-grey">About</a></li>
+                    <li>
+                        <a href="../contact.html" class="dark-grey">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End Navbar Menu -->
+        </header>
+        <!-- End Main NavBar -->
+
+        <!-- Home section -->
+        <div id="home" class="project margin">
+            <!-- Landing Page -->
+            <div class="landing padding-xl">
+                <!-- Description -->
+                <h1 class="anim-intro">Can we see noise ?</h1>
+                <h2 class="anim-intro">Research Project</h2>
+                <!-- Keywords -->
+                <p class="resume light-grey keywords anim-intro">#python #osm #html #maps #hmm #noiseplanet</p>
+                <p class="anim-intro resume">
+                    In urban or industrial areas, noise affects quality of life and the health of the populations. The collaborative NoiseCapture <span class="color-orange">Android</span> app,
+                    developed by the Noise-Planet team, allows to <span class="color-orange">record noise</span> from pedestrian measurements.
+                </p>
+                <p class="anim-intro resume">
+                    This study proposes to explore the different questions required for analysis and representation of this geolocated collaborative heterogeneous data.
+                    <br />
+                    One of the main point discused is track correction a.k.a map matching algorithm, using an
+                    <span class="color-orange">Hidden Markov Model</span> as template.
+                </p>
+                <p class="anim-intro resume">
+                    This project was made collaboratively with
+                    <span class="color-orange">IFSTTAR</span> and <span class="color-orange">CNRS</span> teams.
+                </p>
+                <!-- Information -->
+                <p class="anim-intro">
+                    <span class="when">When : <span class="light-grey">07.2019</span></span
+                    ><br />
+                    <span class="where">Where : <span class="light-grey">Paris, France</span></span
+                    ><br />
+                    <span class="duration">Duration : <span class="light-grey">60hours</span></span
+                    ><br />
+                    <span class="team">Team : <span class="light-grey">Teamwork of 2</span></span
+                    ><br />
+                </p>
+
+                <!-- Logo -->
+                <a class="logo num1 anim-intro color-orange" href="https://github.com/arthurdjn/noiseplanet" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a class="logo num2 anim-intro color-orange" href="https://github.com/arthurdjn/flightio/tree/master/noiseplanet" target="_blank">
+                    <i class="fab fa-python"></i>
+                </a>
+                <a class="logo num3 anim-intro color-orange" href="../doc/PIRPOST_Dujardin_Mermet.pdf" target="_blank">
+                    <i class="fas fa-file-powerpoint"></i>
+                </a>
+                <a class="logo num4 anim-intro color-orange" href="../doc/PIRRAP_Dujardin_Mermet.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+
+                <!-- Scroll Down -->
+                <div class="scroll">
+                    <a href="#context" class="arrow down dark-grey anim-intro"></a>
+                </div>
+            </div>
+            <!-- End Landing Page -->
+        </div>
+        <!-- End Home section -->
+
+        <!-- Project Work section -->
+        <div id="work">
+            <!-- Context section -->
+            <!-- Banner -->
+            <div id="context" class="banner-start bg-orange">
+                <div class="text margin">
+                    <h2 class="white margin-title">Context</h2>
+                    <div class="margin-xl">
+                        <p class="white">
+                            In urban areas, noise affects the quality of life and the health of populations. Strategic noise maps are generally made from models, the result of which may diverge from
+                            the noise that can be felt by inhabitants.
+                        </p>
+                        <p class="white">
+                            The Noise-Planet team (IFSTTAR / CNRS) has developed an application for smartphone, Noise Capture, to collect collaborative data on the noise level in the environment. Raw
+                            data is accessible via a web platform, but the evaluation of the quality of this data, their correction and their representation are under consideration. This study
+                            addresses these questions as part of the ENSG Engineering Cycle Research Project.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Banner -->
+
+            <!-- Sticky Navbar -->
+            <nav id="side-menu" class="transition sticky reveal">
+                <!-- change-opacity null-opacity-->
+                <div class="line transition bg-light-grey"></div>
+                <ul>
+                    <li>
+                        <a href="#context" class="transition dark-grey">Context</a>
+                    </li>
+                    <li>
+                        <a href="#data" class="transition dark-grey">Data</a>
+                    </li>
+                    <li>
+                        <a href="#correction" class="transition dark-grey">Correction</a>
+                    </li>
+                    <li>
+                        <a href="#visualization" class="transition dark-grey">Visualization</a>
+                    </li>
+                    <li>
+                        <a href="#publication" class="transition dark-grey">Publication</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End Navbar -->
+
+            <!-- Scroll up -->
+            <div class="scroll-up sticky">
+                <a href="#top" class="arrow up light-grey change-color transition"></a>
+            </div>
+            <!-- End scroll up -->
+
+            <!-- Data Section -->
+            <div id="area" class="margin reveal">
+                <h1 class="margin-md">Lyon, a dense city</h1>
+                <div class="margin-md">
+                    <a href="http://noise-planet.org/map_noisecapture/index.html#16/45.7503/4.8399/" target="_blank"><img src="../img/noiseplanet/noiseplanet_data.PNG" /></a>
+                </div>
+                <div class="margin-xl">
+                    <p>
+                        The metropolis of Lyon offers the best density of Noise Capture measurements in France. Between September 2017 and April 2018, 500 tracks were recovered, for a total of almost
+                        400,000 points.
+                    </p>
+
+                    <h3>Street Network</h3>
+                    <p>
+                        <span class="color-orange">Open Street Map</span>
+                        provides worldwide and under free license road data and street-oriented graphs both for cars and pedestrains which facilitates our calculations.
+                        <br />
+                        In large French cities this data can be very precise, and sidewalks networks can be acquired.
+                    </p>
+                </div>
+
+                <h2 class="margin-title">Noise Capture</h2>
+                <p class="blockquote quote-orange margin-title margin-xl-right">
+                    NoiseCapture is a free and open-source Android application that allows users to measure and share the noise environnement. Each noise measure is combined with its GPS track so that
+                    the result can be displayed in a interactive maps within the application, but also on
+                    <a href="http://noise-planet.org/map_noisecapture/index.html#5/47.205/12.502" target="_blank"><span class="color-orange">this page</span></a
+                    >.
+                </p>
+                <div class="margin-xl">
+                    <h3>Tracks</h3>
+                    <p>
+                        The data used are the raw traces, directly downloaded from the server via a <span>python</span> script. The files obtained are in <span>geojson</span> format for traces, and
+                        <span>properties</span> for metadata.
+                    </p>
+
+                    <h3>Labels</h3>
+                    <p>
+                        In urban canyons, the
+                        <a href="https://developer.android.com/reference/android/location/Location#getAccuracy()" target="_blank">
+                            <span class="color-orange">planimetric accuracy</span>
+                        </a>
+                        indicated by Android is not enough to qualify geographic data, especially at the start of the day. The application contextualizes this information by adding declarative labels,
+                        such as 'nature', 'train', 'cars', 'wind' etc., which helps to understand the surrounding of the acquisition.
+                    </p>
+                </div>
+            </div>
+            <!-- End Data Section -->
+
+            <!-- Correction Section -->
+            <div id="correction" class="margin reveal">
+                <h1 class="margin-md">Data analysis and correction</h1>
+                <h2 class="margin-title">Map Matching</h2>
+                <div class="margin-xl">
+                    <h3>Overview</h3>
+                    <p>
+                        The principle of
+                        <span class="color-orange">Map Matching</span> consists in coinciding a GNSS track to a Geographic Information System.
+                    </p>
+                    <p>In a context where the pedestrian network is sufficient dense, we can assume that NoiseCapture contributors are moving in majority on identified paths.</p>
+
+                    <h3>Hidden Markov Model</h3>
+                    <p>
+                        <a href="https://www.microsoft.com/en-us/research/publication/hidden-markov-map-matching-noise-sparseness/" target="_blank">
+                            <span class="color-orange">Newson and Krumm</span> </a
+                        >’s algorithm is based on a Hidden Markov Model (HMM), and makes a compromise between projecting the trace on the nearest street section, and the section more consistent. In
+                        this model, each point of the track measured constitute the <span class="color-orange">observable states</span> of the Markov chaine, while the corrected points (projected on
+                        the road section) constitute the <span class="color-orange">hidden states</span>. The continuation of most likely hidden states (the route followed on the network) is
+                        determined by comparing the Euclidean distance of the hidden state from the observable state and from the road between two successive hidden states.
+                    </p>
+
+                    <h3>Nearest path</h3>
+                    <p>
+                        In order to measure the contribution of
+                        <a href="https://www.microsoft.com/en-us/research/publication/hidden-markov-map-matching-noise-sparseness/" target="_blank">
+                            <span class="color-orange">Newson and Krumm</span> </a
+                        >’s algorithm, we developed a naive algorithm that orthogonally projects a track to the nearest street section. Statistical indicators have been stored in an SQL database, in
+                        order to compare and evaluate models performance.
+                    </p>
+
+                    <!-- Columns: big images to the right -->
+                    <div class="row">
+                        <div class="column">
+                            <img src="../img/noiseplanet/nearest_poster.PNG" alt="" />
+                        </div>
+                        <div class="column">
+                            <img src="../img/noiseplanet/hmm_poster.PNG" />
+                        </div>
+                    </div>
+                    <h4>Results of Map Matching by orthogonal projection (left) and Hidden Markov Model (right). The latter ensures the continuity of the track on the network.</h4>
+                    <!-- End Columns -->
+                </div>
+
+                <h2 class="margin-title">Statistics</h2>
+                <div class="margin-xl">
+                    <h3>Indicators and confidence</h3>
+                    <p>
+                        We designed three indicators to compare the results of the orthogonal projection and
+                        <a href="https://www.microsoft.com/en-us/research/publication/hidden-markov-map-matching-noise-sparseness/" target="_blank">
+                            <span class="color-orange">Newson and Krumm</span> </a
+                        >’s algorithm. The length of the projection (between the point provided by Android and its correction) is logically to the advantage of the naive algorithm, even though the
+                        difference computed over the 400,000 points is not overly pronounced (7.1m against 8.6m). We also contextualized these values ​​by comparing them with the indicated planimetric
+                        precision by Android, keeping in mind the imprecision of this urban information. Thus, 65.4% of the orthogonally projected points are located in their precision radius, against
+                        55.7% when using Markov chains.
+                    </p>
+
+                    <h3>Path length</h3>
+                    <p>
+                        These numbers could be considerably improved by removing or recalculating points too far from the pedestrian network. Conversely, the algorithm of
+                        <a href="https://www.microsoft.com/en-us/research/publication/hidden-markov-map-matching-noise-sparseness/" target="_blank">
+                            <span class="color-orange">Newson and Krumm</span>
+                        </a>
+                        ensures the continuity of the trace on the network. In one case out of a thousand, the naive algorithm indeed projects a points out of the pedestiran graph, which is not not
+                        connected the previous points. In addition, we calculated the path length between two consecutive projected points. The averages obtained are respectively 9.3m and 6.8m for the
+                        naive and HMM based algorithms.
+                    </p>
+                </div>
+
+                <h2 class="margin-title">Perspectives</h2>
+                <div class="margin-xl">
+                    <p>
+                        Our first results tend to validate the use of a Map Matching algorithm, in this case the one based on Markov chains, to correct GNSS traces of NoiseCapture data. Developing a
+                        python package will make easier the integration of this tool into Noise-Planet's chain process. For better performance this algorithm will have to integrate a buffer zone in
+                        order to avoid projections that are too far away.
+                    </p>
+                </div>
+            </div>
+            <!-- End Correction Section -->
+
+            <!-- Visualization Section -->
+            <div id="visualization" class="margin reveal">
+                <h1 class="margin-md">Visualization</h1>
+                <h2 class="margin-title">Aggregation</h2>
+                <div class="margin-xl">
+                    <p>
+                        The tracks corrected from the Markov chain algorithm hosted on a server of the Environmental Acoustics Research Unit, could thus be aggregated both in the form of hexagons and
+                        road sections. In the second case, the data is aggregated to the road and not the pedestrian network to improve map reading and robustness.
+                    </p>
+                </div>
+
+                <h2 class="margin-title">Noise and uncertainty</h2>
+
+                <img class="padding-md" src="../img/noiseplanet/noiseplanet_legend.PNG" alt="" />
+
+                <div class="margin-xl">
+                    <p>The number of measurements aggregated as well as the temporal coverage of a day, involve different respective confidence levels to represent the data.</p>
+
+                    <h3>Noise levels</h3>
+                    <p>
+                        currently, NoisePlanet uses a
+                        <span class="color-orange">hexagonal grid</span> to display their raw data. This choice is justified by its form, as a regular hexagon is a unit mesh that can easily fill a
+                        map. In addition, the 15m sides used by Noise-Planet correspond to a homogeneous acoustic level area.
+                    </p>
+                    <p>
+                        The aggregation solution currently offered by the Noise-Planet team could be confronted with an alternative offering combinations of visual variables more readable and
+                        generalized to lower scales.
+                    </p>
+
+                    <!-- Columns: big images to the right -->
+                    <div class="row">
+                        <div class="column">
+                            <img src="../img/noiseplanet/representation_hexagones.jpg" alt="" />
+                        </div>
+                        <div class="column">
+                            <img src="../img/noiseplanet/representation_tronçons.jpg" alt="" />
+                        </div>
+                    </div>
+                    <h4>Noise levels on a hex-map (left) and road map (right).</h4>
+                    <!-- End Columns -->
+
+                    <h3>Uncertainty and precision</h3>
+                    <p>
+                        The use of
+                        <span class="color-orange">road segment</span> allows to aggregate a larger number of measures on the same spatial entity. This number can be represented in associating a size
+                        proportional to a symbol i.e. a line.
+                    </p>
+                    <p>
+                        The pros and cons of these two levels of aggregation have yet to be developed at the statistical level. Finally, the effectiveness of proposals incorporating cross
+                        representations should be measured, including through a survey.
+                    </p>
+                    <!-- Columns: big images to the right -->
+                    <div class="row">
+                        <div class="column">
+                            <img src="../img/noiseplanet/confiance_simple.jpg" alt="" />
+                        </div>
+                        <div class="column">
+                            <img src="../img/noiseplanet/representation_tronçons+nb.jpg" alt="" />
+                        </div>
+                    </div>
+                    <h4>Uncertainty representation on a hex-map (left) and road map (right).</h4>
+                    <!-- End Columns -->
+                </div>
+            </div>
+            <!-- End Visualization Section -->
+
+            <!-- Banner -->
+            <div id="publication" class="banner-end bg-orange mask-color">
+                <div class="text margin">
+                    <h2 class="white margin-title">Publication</h2>
+                    <p class="margin-xl white">
+                        This project has been the object of an article and scientific poster, accessible from the icons
+                        <a class="white" href="#top">here</a>.
+                    </p>
+
+                    <h3 class="margin-xl white">References</h3>
+                    <p class="margin-xl padding-md-left white">
+                        [1] Picaut, J., Fortin, N., Bocher, E., Petit, G., Aumond, P., and Guillaume, G. (2019). An open-science crowdsourcing approach for producing community noise maps using
+                        smartphones. Building and Environment, 148:20 – 33.
+                    </p>
+                    <p class="margin-xl padding-md-left white">[2] Newson, P. and Krumm, J. (2009). Hidden markov map matching through noise and sparseness. pages 336–343.</p>
+                    <p class="margin-xl padding-md-left white">
+                        [3] Boukhelifa N., Bezerianos A., Isenberg T., and Fekete J.-D. (2012). Evaluating sketchiness as a visual variable for the depiction of qualitative uncertainty. IEEE
+                        Transactions on Visualization and Computer Graphics, 18(12):2769–2778
+                    </p>
+                </div>
+            </div>
+            <!-- End Banner -->
+        </div>
+        <!-- End Project Work section -->
+
+        <!-- Overlay effects -->
+        <script src="../static/js/scroll.js"></script>
+        <!-- Reveal on scroll -->
+        <script src="../static/js/reveal.js"></script>
+        <!-- Navbar Hamburger -->
+        <script src="../static/js/navbar.js"></script>
+    </body>
+</html>

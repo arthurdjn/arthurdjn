@@ -1,0 +1,284 @@
+<!--
+File: flightio.html
+Creation: Sunday July 5th 2020
+Author: Arthur Dujardin
+--------
+Copyright (c) 2020 Arthur Dujardin
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Arthur D.</title>
+
+        <!-- CSS Layouts -->
+        <link rel="stylesheet" href="../static/css/root.css" />
+        <link rel="stylesheet" href="../static/css/style.css" />
+        <link rel="stylesheet" href="../static/css/layout.css" />
+        <link rel="stylesheet" href="../static/css/fonts.css" />
+        <link rel="stylesheet" href="../static/css/colors.css" />
+        <link rel="stylesheet" href="../static/css/project.css" />
+        <link rel="stylesheet" href="../static/css/navbar.css" />
+        <link rel="stylesheet" href="../static/css/canvas.css" />
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Font Awesome -->
+        <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+        <!-- TweenMax -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+        <!-- Scrol Reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- Latex on HTML -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    </head>
+
+    <body>
+        <!-- Main NavBar -->
+        <header id="navbar" class="padding bg-white">
+            <!-- Logo -->
+            <ul>
+                <li><a href="../index.html" class="dark-grey">Arthur D.</a></li>
+            </ul>
+            <!-- Hamburger icon -->
+            <div id="nav-toggle">
+                <div class="nav-toggle-bar1 bg-dark-grey"></div>
+                <div class="nav-toggle-bar2 bg-dark-grey"></div>
+                <div class="nav-toggle-bar3 bg-dark-grey"></div>
+            </div>
+            <!-- Menu -->
+            <nav id="nav-menu">
+                <ul>
+                    <li>
+                        <a href="../index.html#portfolio" class="dark-grey">Work</a>
+                    </li>
+                    <li><a href="../about.html" class="dark-grey">About</a></li>
+                    <li>
+                        <a href="../contact.html" class="dark-grey">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End Navbar Menu -->
+        </header>
+        <!-- End Main NavBar -->
+
+        <!-- Home section -->
+        <div id="home" class="project margin">
+            <!-- Landing Page -->
+            <div class="landing padding-xl">
+                <!-- Description -->
+                <h1 class="anim-intro">Flightio</h1>
+                <h2 class="anim-intro">Internship Project</h2>
+                <!-- Keywords -->
+                <p class="resume light-grey keywords anim-intro">#java #android #flylitchi #drone #mapping #photogrammetry</p>
+                <p class="anim-intro resume">
+                    Planning a flight for
+                    <span class="color-blue">photogrammetry</span> can be a time consuming task. There are some online tools, like <span class="color-blue">flylitchi</span>, that allow you to manage
+                    and easily create your plans - but with limited options.
+                </p>
+                <p class="anim-intro resume">
+                    Flightio is an
+                    <span class="color-blue">android</span> application made in Java for <span class="color-blue">drone flight</span> mapping, used for remote sensing and photogrammetry. This
+                    application export a ready-to-go plan regarding the specific camera settings, and export it to your flylitchi account and drone.
+                </p>
+                <p class="anim-intro resume">
+                    This project was made at the
+                    <span class="color-blue">IGN</span> center within a bigger project for <span class="color-blue">multispectral photogrammetry</span>.
+                </p>
+                <!-- Information -->
+                <p class="anim-intro">
+                    <span class="when">When : <span class="light-grey">07.2019</span></span>
+                    <br />
+                    <span class="where">Where : <span class="light-grey">Forcalquier, France</span></span>
+                    <br />
+                    <span class="duration">Duration : <span class="light-grey">3 days</span></span>
+                    <br />
+                    <!-- <span class="team">Team : <span class="light-grey">Teamwork of 2</span></span><br> -->
+                </p>
+
+                <!-- Logo -->
+                <a class="logo num1 anim-intro color-blue" href="https://github.com/arthurdjn/flightio" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a class="logo num2 anim-intro color-blue" href="https://github.com/arthurdjn/flightio/tree/master/Flightio/app/src/main/java/com/example/flightio" target="_blank">
+                    <i class="fab fa-android"></i>
+                </a>
+
+                <!-- Scroll Down -->
+                <div class="scroll">
+                    <a href="#context" class="arrow down dark-grey anim-intro"></a>
+                </div>
+            </div>
+            <!-- End Landing Page -->
+        </div>
+        <!-- End Home section -->
+
+        <!-- Project Work section -->
+        <div id="work">
+            <!-- Context section -->
+            <!-- Banner -->
+            <div id="context" class="banner-start bg-green">
+                <div class="text margin">
+                    <h2 class="white margin-title">Context</h2>
+                    <p class="white margin-xl">
+                        At first, we were creating manually a flight plan on flylitchi. But this simple task took us more time than expected, as we needed to constantly adapt the initial plan to the
+                        terrain. It can be difficult to estimate precisely a flight / altitude from only satellites images - or 2D images in genral.
+                    </p>
+                    <p class="white margin-xl">
+                        I took the initiative to create this mobile application, so we could quickly adapt a flight to the terrain. As we were working on multiple sites in the Alps of High Provence -
+                        and sometimes in rough conditions, it was easier to modify it through a mobile phone than a laptop.
+                    </p>
+                </div>
+            </div>
+            <!-- End Banner -->
+
+            <!-- Sticky Navbar -->
+            <nav id="side-menu" class="transition sticky reveal">
+                <!-- change-opacity null-opacity-->
+                <div class="line transition bg-light-grey"></div>
+                <ul>
+                    <li>
+                        <a href="#context" class="transition dark-grey">Context</a>
+                    </li>
+                    <li>
+                        <a href="#photogrammetry" class="transition dark-grey">Photogrammetry</a>
+                    </li>
+                    <li>
+                        <a href="#interface" class="transition dark-grey">Interface</a>
+                    </li>
+                    <li>
+                        <a href="#export" class="transition dark-grey">Flight</a>
+                    </li>
+                    <li>
+                        <a href="#outcomes" class="transition dark-grey">Outcomes</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End Navbar -->
+
+            <!-- Scroll up -->
+            <div class="scroll-up sticky">
+                <a href="#" class="arrow up light-grey change-color transition"></a>
+            </div>
+            <!-- End scroll up -->
+
+            <!-- Application section -->
+            <div id="photogrammetry" class="text margin reveal">
+                <h1 class="margin-md">An android application for drone photogrammetry</h1>
+                <div class="margin-xl">
+                    <img class="reveal" src="../medias/projects/flightio/flightio_alps.png" />
+                </div>
+                <h2 class="margin-title">Aerial photogrammetry</h2>
+                <div class="margin-xl">
+                    <h3>Introduction</h3>
+                    <p>
+                        Photogrammetry is the science of computing measurements from photographs. This technology is used to generate 3D objects from a set of images. We used
+                        <a href="https://micmac.ensg.eu/index.php/Accueil" target="_blank"><span class="color-blue">MicMac</span></a>
+                        to generate multispectral 3D maps from our aerial images, but this is another project.
+                    </p>
+                    <p>
+                        Flightio was used to generate a flight plan and export it to our flylitchi account and device. The purpose of this application was to automate this task and to guarantee the
+                        respect of the coverage between photos - a constraint of photogrammetry. The more the images overlap, the more points will make up the 3D model.
+                    </p>
+                    <h3>Constraints</h3>
+                    <p>
+                        The camera's manufacturer often specify the captor size \(l\) and the size of a photosite \(p\) - i.e a pixel, or the focal length \(f\). From this data, we can estimate the
+                        altitude \(H\) and flight speed to make sure that our covering \(C\) is respected.
+                        <br />
+                        Let's visualize what I mean:
+                    </p>
+                    <img src="../medias/projects/flightio/aerial_photogrammetry.png" />
+                    <p>A bunch of mathematical equations are used to compute one variable from anoter.</p>
+                    <p>
+                        The number of photosites in the axis \(i\) is \(n_i = l_i / p_i\),
+                        <br />
+                        The ground pixel size is \(P_i = H * p_i / f\),
+                        <br />
+                        The ground image size is \(L_i = P_i * n_i\),
+                        <br />
+                        The base between two photos is \(B_i = L_i * (1 - C_i)\), etc.
+                    </p>
+                    <p>Once the base and altitude are computed, it's start to generate a plan that respect these constraints.</p>
+                </div>
+
+                <h2 class="margin-title">Mapping</h2>
+                <div class="margin-xl">
+                    <p>
+                        The creation of the plan is quite simple. The user specify a bbox where the drone will fly over. Then a succession of interpolations are executed to generated Points of
+                        Interest (POI), where the drone will shoot a photo.
+                    </p>
+                </div>
+            </div>
+
+            <div id="interface" class="text margin reveal">
+                <h1 class="margin-md">A minimal layout</h1>
+                <h2 class="margin-title">Keep it simple</h2>
+
+                <div class="margin-xl">
+                    <p>
+                        In only three days, I did't had time to make a complex application. In addition, I was working on this
+                        <a href="colorply.html"><span class="color-blue">project</span></a>
+                        at the same time, so I made a basic UI and minimal layout that satisfy our needs. I coded two Fragment Pages, one for the settings and the other for mapping. Both pages are
+                        linked, so that the settings computed from the first Fragment are send to the second.
+                    </p>
+                </div>
+                <div class="margin-md">
+                    <img src="../medias/projects/flightio/flightio_interface.png" />
+                </div>
+                <h2 class="margin-title">Elegantly easy</h2>
+                <div class="margin-xl">
+                    <p>
+                        The user only needs to set the camera used and its covering / altitude to generate a plan. Then, the user swipe to the second view and draw the contour of its flight. The
+                        generate button is used to create the drone plan.
+                        <br />
+                        Voilà !
+                    </p>
+                </div>
+            </div>
+
+            <!-- Columns: big images to the right -->
+            <div id="export" class="margin">
+                <div class="margin-md">
+                    <div class="row">
+                        <div class="column">
+                            <div class="reveal">
+                                <h1>Export your <br />flight</h1>
+                                <p class="margin-left reveal">
+                                    Flightio generates the flight in a csv format under-the-hood. This plan can be saved locally - as a csv, or exported to your flylitchi account and drone device.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column reveal">
+                            <img src="../medias/projects/flightio/flightio_maps.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Columns -->
+
+            <!-- Banner -->
+            <div id="outcomes" class="banner-end bg-green mask-color">
+                <div class="text margin">
+                    <h2 class="white margin-title">Outcomes</h2>
+                    <p class="margin-xl white">
+                        Coding intesively during three nights have been the occasion to exploit my Java knowledge at its best. I'm kinda proud of this achievement, but I guess my teamwork are even
+                        more satisfied as this application was not part of the contract. From my point of view, there are still some missing functionalities, but hey, it's a three nights coding app.
+                    </p>
+                </div>
+            </div>
+            <!-- End Banner -->
+        </div>
+        <!-- End Project Work section -->
+
+        <!-- Overlay effects -->
+        <script src="../static/js/scroll.js"></script>
+        <!-- Reveal on scroll -->
+        <script src="../static/js/reveal.js"></script>
+        <!-- Navbar Hamburger -->
+        <script src="../static/js/navbar.js"></script>
+    </body>
+</html>

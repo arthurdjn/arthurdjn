@@ -1,0 +1,114 @@
+<!--
+File: img2poem.html
+Creation: Sunday July 5th 2020
+Author: Arthur Dujardin
+--------
+Copyright (c) 2020 Arthur Dujardin
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Arthur D.</title>
+
+        <!-- CSS Layouts -->
+        <link rel="stylesheet" href="../static/css/root.css" />
+        <link rel="stylesheet" href="../static/css/style.css" />
+        <link rel="stylesheet" href="../static/css/layout.css" />
+        <link rel="stylesheet" href="../static/css/fonts.css" />
+        <link rel="stylesheet" href="../static/css/colors.css" />
+        <link rel="stylesheet" href="../static/css/project.css" />
+        <link rel="stylesheet" href="../static/css/navbar.css" />
+        <link rel="stylesheet" href="../static/css/canvas.css" />
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Font Awesome -->
+        <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+        <!-- TweenMax -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+        <!-- Scrol Reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+
+    <body>
+        <!-- Main NavBar -->
+        <header id="navbar" class="padding bg-white">
+            <!-- Logo -->
+            <ul>
+                <li><a href="../index.html" class="dark-grey">Arthur D.</a></li>
+            </ul>
+            <!-- Hamburger icon -->
+            <div id="nav-toggle">
+                <div class="nav-toggle-bar1 bg-dark-grey"></div>
+                <div class="nav-toggle-bar2 bg-dark-grey"></div>
+                <div class="nav-toggle-bar3 bg-dark-grey"></div>
+            </div>
+            <!-- Menu -->
+            <nav id="nav-menu">
+                <ul>
+                    <li>
+                        <a href="../index.html#portfolio" class="dark-grey">Work</a>
+                    </li>
+                    <li><a href="../about.html" class="dark-grey">About</a></li>
+                    <li>
+                        <a href="../contact.html" class="dark-grey">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End Navbar Menu -->
+        </header>
+        <!-- End Main NavBar -->
+
+        <!-- Home section -->
+        <div id="home" class="project margin">
+            <!-- Landing Page -->
+            <div class="landing padding-xl">
+                <!-- Description -->
+                <h1 class="anim-intro">Neural Networks from Scratch</h1>
+                <h2 class="anim-intro">School Project</h2>
+
+                <!-- Keywords -->
+                <p class="resume light-grey keywords anim-intro">#deeplearning #cnn #rnn #dnn #python #numpy #autograd</p>
+                <p class="anim-intro resume">
+                    During my master studies at the
+                    <span class="color-blue">University of Oslo</span>
+                    I created a <span class="color-blue">Deep Learning Framework</span> from scratch, using only <span class="color-blue">Numpy</span>.
+                </p>
+                <p class="anim-intro resume">Even though this project started as a school project for <span class="color-blue">IN5400</span> lecture, known as <span class="color-blue">Machine Learning for Image Analysis</span>.</p>
+                <p class="anim-intro resume">
+                    I wanted to push the project even further and create a complete framework, with full forward and backward propagation for custom networks. I also wanted to create an <span class="color-blue">autograd</span>
+                    system, to understand in details the mechanisms used in popular DL frameworks.
+                </p>
+
+                <!-- Information -->
+                <p class="anim-intro">
+                    <span class="when">When : <span class="light-grey">03.2020</span></span>
+                    <br />
+                    <span class="where">Where : <span class="light-grey">Oslo, Norway</span></span>
+                    <br />
+                    <span class="duration">Duration : <span class="light-grey">4 weeks</span></span>
+                </p>
+
+                <!-- Tools -->
+                <div class="tools">
+                    <a class="logo num1 anim-intro color-blue" href="https://github.com/arthurdjn/nets" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- End Landing Page -->
+        </div>
+        <!-- End Home section -->
+
+        <!-- Overlay effects -->
+        <script src="../static/js/scroll.js"></script>
+        <!-- Reveal on scroll -->
+        <script src="../static/js/reveal.js"></script>
+        <!-- Navbar Hamburger -->
+        <script src="../static/js/navbar.js"></script>
+    </body>
+</html>

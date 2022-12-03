@@ -1,0 +1,32 @@
+/*
+ * File: root.css
+ * Creation: Wednesday September 2nd 2020
+ * Author: Arthur Dujardin
+ * Contact: arthur.dujardin@ensg.eu
+ *          arthurd@ifi.uio.no
+ * --------
+ * Copyright (c) 2020 Arthur Dujardin
+ */
+
+
+:root {
+    --spacing-horizontal-sm: 4vw;
+    --spacing-horizontal-md: 8vw;
+    --spacing-horizontal-lg: 12vw;
+    --spacing-horizontal-xl: 16vw;
+
+    --spacing-vertical-sm: 4vw;
+    --spacing-vertical-md: 8vw;
+    --spacing-vertical-lg: 12vw;
+    --spacing-vertical-xl: 16vw;
+
+    --color-dark-grey: #2b2b2b;
+    --color-light-grey: #919191;
+    --color-white: #ffffff;
+    --color-orange: #ff4e00;
+    --color-red: #e20a3c;
+    --color-purple: #e20a3c;
+    --color-blue: #34b7eb;
+    --color-dark-blue: #003951;
+    --color-green: #1be29a;
+}

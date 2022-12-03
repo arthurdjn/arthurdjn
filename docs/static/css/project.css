@@ -1,0 +1,124 @@
+/*
+ * File: project.css
+ * Creation: Wednesday September 2nd 2020
+ * Author: Arthur Dujardin
+ * Contact: arthur.dujardin@ensg.eu
+ *          arthurd@ifi.uio.no
+ * --------
+ * Copyright (c) 2020 Arthur Dujardin
+ */
+
+
+/* Banner */
+.banner-start {
+    position: relative;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+.banner-start {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 4vh;
+}
+.banner-end {
+    position: relative;
+    margin-top: 4vh;
+    margin-bottom: 0;
+}
+.banner .text,
+.banner-end .text,
+.banner-start .text {
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+}
+.banner img,
+.banner-end img,
+.banner-start img {
+    overflow: hidden;
+    height: 100%;
+}
+
+/* Navbar */
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+}
+#side-menu {
+    z-index: 1;
+    float: left;
+    margin-top: 6vh;
+    margin-left: 3vw;
+    top: 15vh;
+}
+.line {
+    position: absolute;
+    float: left;
+    height: 100%;
+    width: 2px;
+}
+#side-menu li {
+    list-style-type: none;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    transition: 0.2s ease-in-out;
+}
+#side-menu a {
+    font-weight: 300;
+    position: relative;
+}
+#side-menu li:hover {
+    transform: translateX(7px);
+    transition: 0.2s ease-in-out;
+}
+
+/* Content */
+#work img {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Column */
+.row {
+    display: table-row;
+}
+.column {
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.column-lg {
+    width: 75%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.column-sm {
+    width: 25%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 1200px) {
+    /* Layout */
+    #side-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .column.expand {
+        width: 100%;
+        margin-right: var(--spacing-horizontal-sm);
+        display: block;
+    }
+    .column.expand-sm {
+        width: auto;
+        margin-right: var(--spacing-horizontal-xl);
+        margin-left: var(--spacing-horizontal-xl);
+        display: block;
+    }
+    .banner-start {
+        margin-bottom: 0;
+    }
+}

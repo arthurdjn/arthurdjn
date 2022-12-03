@@ -1,0 +1,120 @@
+<!--
+File: contact.html
+Creation: Sunday July 5th 2020
+Author: Arthur Dujardin
+--------
+Copyright (c) 2020 Arthur Dujardin
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UAV-Compatible" content="ie=edge" />
+        <title>Arthur D</title>
+        <link rel="stylesheet" href="dist/css/style.css" />
+
+        <!-- CSS Layouts -->
+        <link rel="stylesheet" href="static/css/root.css" />
+        <link rel="stylesheet" href="static/css/layout.css" />
+        <link rel="stylesheet" href="static/css/style.css" />
+        <link rel="stylesheet" href="static/css/navbar.css" />
+        <link rel="stylesheet" href="static/css/fonts.css" />
+        <link rel="stylesheet" href="static/css/colors.css" />
+        <link rel="stylesheet" href="static/css/contact.css" />
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Main NavBar -->
+        <header id="navbar" class="padding change-color">
+            <!-- Logo -->
+            <ul>
+                <li><a href="index.html" class="white">Arthur D.</a></li>
+            </ul>
+            <!-- Hamburger icon -->
+            <div id="nav-toggle">
+                <div class="nav-toggle-bar1 bg-white"></div>
+                <div class="nav-toggle-bar2 bg-white"></div>
+                <div class="nav-toggle-bar3 bg-white"></div>
+            </div>
+            <!-- Menu -->
+            <nav id="nav-menu">
+                <ul>
+                    <li>
+                        <a href="index.html#portfolio" class="white">Work</a>
+                    </li>
+                    <li><a href="about.html" class="white">About</a></li>
+                    <li><a href="contact.html" class="white">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- End Navbar Menu -->
+        </header>
+        <!-- End Main NavBar -->
+
+        <!-- Home section -->
+        <div id="home" class="title margin">
+            <img src="medias/backgrounds/bg-bluegreen.png" />
+
+            <div class="landing padding-xl">
+                <!-- Form -->
+                <form
+                    action="https://formspree.io/art.dujardin@hotmail.fr"
+                    method="POST"
+                >
+                    <div class="item item-grid">
+                        <div class="input-col">
+                            <input
+                                class="name"
+                                name="name"
+                                type="name"
+                                placeholder="Your name"
+                            />
+                            <div class="status-name"></div>
+                        </div>
+                        <div class="input-col">
+                            <input
+                                class="email"
+                                name="email"
+                                type="email"
+                                placeholder="Email"
+                            />
+                            <div class="status-email"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <input
+                            class="subject"
+                            name="subject"
+                            type="subject"
+                            placeholder="Subject"
+                        />
+                        <div class="status-subject"></div>
+                    </div>
+                    <div class="item">
+                        <textarea
+                            class="message"
+                            name="message"
+                            placeholder="Message"
+                        ></textarea>
+                        <div class="status-message"></div>
+                    </div>
+                    <button id="send" class="draw-border submit" type="submit">
+                        Send
+                    </button>
+                </form>
+                <!-- End Form -->
+            </div>
+        </div>
+        <!-- End Home section -->
+
+        <!-- Navbar Hamburger -->
+        <script src="static/js/navbar.js"></script>
+        <!-- Contact Form -->
+        <script src="static/js/contact/form.js"></script>
+    </body>
+</html>

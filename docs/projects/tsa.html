@@ -1,0 +1,122 @@
+<!--
+File: tsa.html
+Creation: Sunday July 5th 2020
+Author: Arthur Dujardin
+--------
+Copyright (c) 2020 Arthur Dujardin
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Arthur D.</title>
+
+        <!-- CSS Layouts -->
+        <link rel="stylesheet" href="../static/css/root.css" />
+        <link rel="stylesheet" href="../static/css/style.css" />
+        <link rel="stylesheet" href="../static/css/layout.css" />
+        <link rel="stylesheet" href="../static/css/fonts.css" />
+        <link rel="stylesheet" href="../static/css/colors.css" />
+        <link rel="stylesheet" href="../static/css/project.css" />
+        <link rel="stylesheet" href="../static/css/navbar.css" />
+        <link rel="stylesheet" href="../static/css/canvas.css" />
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Font Awesome -->
+        <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+        <!-- TweenMax -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+        <!-- Scrol Reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+
+    <body>
+        <!-- Main NavBar -->
+        <header id="navbar" class="padding bg-white">
+            <!-- Logo -->
+            <ul>
+                <li><a href="../index.html" class="dark-grey">Arthur D.</a></li>
+            </ul>
+            <!-- Hamburger icon -->
+            <div id="nav-toggle">
+                <div class="nav-toggle-bar1 bg-dark-grey"></div>
+                <div class="nav-toggle-bar2 bg-dark-grey"></div>
+                <div class="nav-toggle-bar3 bg-dark-grey"></div>
+            </div>
+            <!-- Menu -->
+            <nav id="nav-menu">
+                <ul>
+                    <li>
+                        <a href="../index.html#portfolio" class="dark-grey">Work</a>
+                    </li>
+                    <li><a href="../about.html" class="dark-grey">About</a></li>
+                    <li>
+                        <a href="../contact.html" class="dark-grey">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End Navbar Menu -->
+        </header>
+        <!-- End Main NavBar -->
+
+        <!-- Home section -->
+        <div id="home" class="project margin">
+            <!-- Landing Page -->
+            <div class="landing padding-xl">
+                <!-- Description -->
+                <h1 class="anim-intro">Targeted Sentiment Analysis</h1>
+                <h2 class="anim-intro">WNNLP Publication</h2>
+
+                <!-- Keywords -->
+                <p class="resume light-grey keywords anim-intro">#deeplearning #nlp #python #sentiment #bert</p>
+                <p class="anim-intro resume">
+                    During spring 2020, I published and presented a report for the
+                    <span class="color-purple">Workshop on Neural Natural Language Processing (WNNLP)</span>.
+                </p>
+                <p class="anim-intro resume">
+                    <span class="color-purple">Targeted Sentiment Analysis (TSA)</span>
+                    is a variant of normal sentiment analysis, with which you can analyse the sentiment towards a specific target within a text. The goal of this project was to train different neural
+                    systems to perform TSA for Norwegian text.
+                </p>
+                <p class="anim-intro resume">
+                    Different design methods were examined to find out what their effects were on the recently released dataset <span class="color-purple">NoReCfine</span>. The performance of
+                    bidirectional LSTMs, GRUs and a BERT model were compared to each other and a baseline.
+                </p>
+
+                <!-- Information -->
+                <p class="anim-intro">
+                    <span class="when">When : <span class="light-grey">04.2020</span></span>
+                    <br />
+                    <span class="where">Where : <span class="light-grey">Oslo, Norway</span></span>
+                    <br />
+                    <span class="duration">Duration : <span class="light-grey">3 weeks</span></span>
+                    <br />
+                    <span class="team">Team : <span class="light-grey">Teamwork of 3</span></span>
+                </p>
+
+                <!-- Tools -->
+                <div class="tools">
+                    <a class="logo num1 anim-intro color-purple" href="https://github.com/arthurdjn/targeted-sentiment-analysis" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a class="logo num2 anim-intro color-purple" href="https://www.uio.no/studier/emner/matnat/ifi/IN5550/v20/proceedings.pdf" target="_blank">
+                        <i class="fas fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- End Landing Page -->
+        </div>
+        <!-- End Home section -->
+
+        <!-- Overlay effects -->
+        <script src="../static/js/scroll.js"></script>
+        <!-- Reveal on scroll -->
+        <script src="../static/js/reveal.js"></script>
+        <!-- Navbar Hamburger -->
+        <script src="../static/js/navbar.js"></script>
+    </body>
+</html>

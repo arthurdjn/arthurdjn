@@ -1,0 +1,203 @@
+/*
+ * File: fonts.css
+ * Creation: Sunday July 5th 2020
+ * Author: Arthur Dujardin
+ * Contact: arthur.dujardin@ensg.eu
+ *          arthurd@ifi.uio.no
+ * --------
+ * Copyright (c) 2020 Arthur Dujardin
+ */
+
+
+/* Table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed; /* equal width cols */
+}
+td, th {
+    border: 1px solid #fafafa;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* Fonts */
+a, button {
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+}
+button {
+    font-size: 20px;
+    font-weight: 500;
+}
+h1 {
+    color: var(--color-dark-grey);
+    font-size: 80px;
+    line-height: 100px;
+    font-weight: 400;
+}
+h2 {
+    color: var(--color-dark-grey);
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 400;
+}
+h3 {
+    color: var(--color-dark-grey);
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 400;
+}
+h4 {
+    color: var(--color-dark-grey);
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 300;
+    font-style: italic;
+}
+p, a, td, th {
+    font-family: "Quicksand", sans-serif;
+    text-transform: initial;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    color: var(--color-dark-grey);
+    word-spacing: 2px;
+    letter-spacing: 0;
+}
+th {
+    font-weight: 500;
+}
+ul li a {
+    font-family: "Noto Sans TC";
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+pre code {
+    font-size: 17px;
+}
+.item input,
+.item textarea { 
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*                                                Responsive                                                          */
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 1500px) {
+    h1 {
+        font-size: 65px;
+        line-height: 80px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    h3 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+    h4, p, a, td, th,
+    .item input,
+    .item textarea {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    pre code {
+        font-size: 15px;
+    }
+    ul li a {
+        font-size: 13px;
+    }
+    button {
+        font-size: 16px;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/* PC */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 60px;
+        line-height: 80px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    h3 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+    h4, p, a, td, th,
+    .item input,
+    .item textarea {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    pre code {
+        font-size: 15px;
+    }
+    ul li a {
+        font-size: 13px;
+    }
+    button {
+        font-size: 16px;
+    }
+}
+
+/* Medium Devices */
+@media (max-width: 992px) {
+    /* Fonts */
+    h1 {
+        font-size: 50px;
+        line-height: 65px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+        line-height: 62px;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/* Smartphones & Landscapes */
+@media (max-width: 576px) {
+    /* Fonts */
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    h4, p, a, td, th,
+    .item input,
+    .item textarea {
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+
+/* XS Devices */
+@media (max-width: 360px) {
+    /* Fonts */
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}

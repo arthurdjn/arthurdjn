@@ -1,0 +1,209 @@
+<!--
+File: permafrost.html
+Creation: Sunday July 5th 2020
+Author: Arthur Dujardin
+--------
+Copyright (c) 2020 Arthur Dujardin
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Arthur D.</title>
+
+        <!-- CSS Layouts -->
+        <link rel="stylesheet" href="../static/css/root.css" />
+        <link rel="stylesheet" href="../static/css/style.css" />
+        <link rel="stylesheet" href="../static/css/layout.css" />
+        <link rel="stylesheet" href="../static/css/fonts.css" />
+        <link rel="stylesheet" href="../static/css/colors.css" />
+        <link rel="stylesheet" href="../static/css/project.css" />
+        <link rel="stylesheet" href="../static/css/navbar.css" />
+        <link rel="stylesheet" href="../static/css/canvas.css" />
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Font Awesome -->
+        <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+        <!-- TweenMax -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+        <!-- Scrol Reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- Latex on HTML -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    </head>
+
+    <body>
+        <!-- Main NavBar -->
+        <header id="navbar" class="padding bg-white">
+            <!-- Logo -->
+            <ul>
+                <li><a href="../index.html" class="dark-grey">Arthur D.</a></li>
+            </ul>
+            <!-- Hamburger icon -->
+            <div id="nav-toggle">
+                <div class="nav-toggle-bar1 bg-dark-grey"></div>
+                <div class="nav-toggle-bar2 bg-dark-grey"></div>
+                <div class="nav-toggle-bar3 bg-dark-grey"></div>
+            </div>
+            <!-- Menu -->
+            <nav id="nav-menu">
+                <ul>
+                    <li>
+                        <a href="../index.html#portfolio" class="dark-grey">Work</a>
+                    </li>
+                    <li><a href="../about.html" class="dark-grey">About</a></li>
+                    <li>
+                        <a href="../contact.html" class="dark-grey">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End Navbar Menu -->
+        </header>
+        <!-- End Main NavBar -->
+
+        <!-- Home section -->
+        <div id="home" class="project margin">
+            <!-- Landing Page -->
+            <div class="landing padding-xl">
+                <!-- Description -->
+                <h1 class="anim-intro">How much will permafrost thaw ?</h1>
+                <h2 class="anim-intro">Internship Project</h2>
+                <!-- Keywords -->
+                <p class="resume light-grey keywords anim-intro">#permafrost #nasa #python #prediction #timeseries #globalwarming</p>
+                <p class="anim-intro resume">
+                    As global temperatures rise,
+                    <span class="color-blue">permafrost</span> areas are also warming quickly. Permafrost collapse could lead to an acceleration in <span class="color-blue">carbon dioxide</span> release which will accelerate global warming. Aftermaths can already be seen in arctic environment. Scientists agree that global warming has a direct impact on permafrost thawing, however the fraction and speed of permafrost thaw is thornier to predict. Various model can be used to predict such trends. A <span class="color-blue">time series</span> prediction based on
+                    <span class="color-blue">Mean Annual Air Temperature</span>
+                    and permafrost interactions will be modeled to predict permafrost evolution.
+                </p>
+                <p class="anim-intro resume">
+                    This project was made at the geoscience department at the
+                    <span class="color-blue">University of Oslo</span>.
+                </p>
+                <!-- Information -->
+                <p class="anim-intro">
+                    <span class="when">When : <span class="light-grey">07.2019</span></span
+                    ><br />
+                    <span class="where">Where : <span class="light-grey">Oslo, Norway</span></span
+                    ><br />
+                    <span class="duration">Duration : <span class="light-grey">10 hours</span></span
+                    ><br />
+                </p>
+
+                <!-- Logo -->
+                <a class="logo num1 anim-intro color-blue" href="../papers/GEO4410_Permafrost.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+                <a class="logo num2 anim-intro color-blue" href="../papers/GEO4410_Boreholes.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+
+                <!-- Scroll Down -->
+                <div class="scroll">
+                    <a href="#context" class="arrow down dark-grey anim-intro"></a>
+                </div>
+            </div>
+            <!-- End Landing Page -->
+        </div>
+        <!-- End Home section -->
+
+        <!-- Project Work section -->
+        <div id="work">
+            <!-- Context section -->
+            <!-- Banner -->
+            <div id="context" class="banner-start bg-green">
+                <div class="text margin">
+                    <h2 class="white margin-title">Context</h2>
+                    <p class="white margin-xl">An environmental vicious circle is taking place, as permafrost thaws. In fact, previously frozen organic in permafrost decomposes and generates carbon dioxide and methane which are released in the atmosphere, leading to an acceleration of global warming. In addition, Arctic areas are warming much faster than the rest of the globe, causing more and more hazards.</p>
+                    <p class="white margin-xl">Thanks to satellites data of Earth’s surface, evolution of world’s temperatures can be used to predict the evolution of permafrost.</p>
+                </div>
+            </div>
+            <!-- End Banner -->
+
+            <!-- Sticky Navbar -->
+            <nav id="side-menu" class="transition sticky reveal">
+                <!-- change-opacity null-opacity-->
+                <div class="line transition bg-light-grey"></div>
+                <ul>
+                    <li>
+                        <a href="#context" class="transition dark-grey">Context</a>
+                    </li>
+                    <li>
+                        <a href="#nasa" class="transition dark-grey">Global Warming</a>
+                    </li>
+                    <li>
+                        <a href="#permafrost" class="transition dark-grey">Fieldwork</a>
+                    </li>
+                    <li>
+                        <a href="#publication" class="transition dark-grey">Publication</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End Navbar -->
+
+            <!-- Scroll up -->
+            <div class="scroll-up sticky">
+                <a href="#" class="arrow up light-grey change-color transition"></a>
+            </div>
+            <!-- End scroll up -->
+
+            <!-- Application section -->
+            <div id="photogrammetry" class="text margin reveal">
+                <h1 class="margin-md">Global warming is unequivocal</h1>
+                <div class="margin-md">
+                    <video width="100%" height="auto" loop autoplay muted>
+                        <source src="../medias/projects/permafrost/MAAT_global_warming.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <h2 class="margin-title">Temperature anomalies</h2>
+
+                <div class="margin-xl">
+                    <h3>Climate change</h3>
+                    <p>For this article, I assume that everyone is familiar with climate change and global warming.</p>
+                    <p class="blockquote quote-blue">
+                        Scientific evidence for warming of the climate system is unequivocal.
+                        <br />
+                        <br />
+                        - Intergovernmental Panel on Climate Change
+                    </p>
+                    <h3>NASA's dataset</h3>
+                    <p>
+                        To measure global warming, NASA’s temperatures dataset has been used.
+                        <span class="color-blue">Mean Annual Air Temperatures</span>
+                        (MAAT) from both land and ocean have missing values, therefore they have been interpolated over time. Temperature anomalies represents change in temperatures, here from 1880 to 2019. This change is measured in regards of the mean temperatures of this period:
+                        <br />
+                        $$ \forall \omega \in \Omega, \quad T_{anomaly}(\omega) = T(\omega) - \mathbb{E}(T) $$
+                    </p>
+
+                    <h3>Prediction</h3>
+                    <p>Temperature anomalies are well used to model and predict climate change. The following models will only use timeseries temperature anomalies from 1880.</p>
+                    <p>Linear and non-linear regressions are applied to fit best the temperature anomalies trend, curve, cycle and irregularities, using time \(t\) as regressor. These functions can be decomposed into different categories, growth \(g\), seasonal \(s\), event \(e\) and variability \(\epsilon\). The regression function \(f\) is then: $$ \forall t \in \mathbb{R}, \quad f(t) = g(t) + s(t) + e(t)+ \epsilon(t) $$</p>
+
+                    <img src="../medias/projects/permafrost/prediction_fbprophet.png" />
+                </div>
+            </div>
+
+            <!-- Banner -->
+            <div id="outcomes" class="banner-end bg-green mask-color">
+                <div class="text margin">
+                    <h2 class="white margin-title">Outcomes</h2>
+                    <p class="margin-xl white">This short project was the opportunity to see directly the evolution of permafrost in arctic regions during a field trip, in Norway.</p>
+                </div>
+            </div>
+            <!-- End Banner -->
+        </div>
+        <!-- End Project Work section -->
+
+        <!-- Overlay effects -->
+        <script src="../static/js/scroll.js"></script>
+        <!-- Reveal on scroll -->
+        <script src="../static/js/reveal.js"></script>
+        <!-- Navbar Hamburger -->
+        <script src="../static/js/navbar.js"></script>
+    </body>
+</html>

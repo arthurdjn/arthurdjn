@@ -1,0 +1,266 @@
+<!--
+File: ailia.html
+Creation: Sunday July 5th 2020
+Author: Arthur Dujardin
+--------
+Copyright (c) 2020 Arthur Dujardin
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Arthur D.</title>
+
+        <!-- CSS Layouts -->
+        <link rel="stylesheet" href="../static/css/root.css" />
+        <link rel="stylesheet" href="../static/css/style.css" />
+        <link rel="stylesheet" href="../static/css/layout.css" />
+        <link rel="stylesheet" href="../static/css/fonts.css" />
+        <link rel="stylesheet" href="../static/css/colors.css" />
+        <link rel="stylesheet" href="../static/css/project.css" />
+        <link rel="stylesheet" href="../static/css/navbar.css" />
+        <link rel="stylesheet" href="../static/css/canvas.css" />
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Font Awesome -->
+        <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+        <!-- TweenMax -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+        <!-- Scrol Reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+
+    <body>
+        <!-- Main NavBar -->
+        <header id="navbar" class="padding bg-white">
+            <!-- Logo -->
+            <ul>
+                <li><a href="../index.html" class="dark-grey">Arthur D.</a></li>
+            </ul>
+            <!-- Hamburger icon -->
+            <div id="nav-toggle">
+                <div class="nav-toggle-bar1 bg-dark-grey"></div>
+                <div class="nav-toggle-bar2 bg-dark-grey"></div>
+                <div class="nav-toggle-bar3 bg-dark-grey"></div>
+            </div>
+            <!-- Menu -->
+            <nav id="nav-menu">
+                <ul>
+                    <li>
+                        <a href="../index.html#portfolio" class="dark-grey">Work</a>
+                    </li>
+                    <li><a href="../about.html" class="dark-grey">About</a></li>
+                    <li>
+                        <a href="../contact.html" class="dark-grey">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End Navbar Menu -->
+        </header>
+        <!-- End Main NavBar -->
+
+        <!-- Home section -->
+        <div id="home" class="project margin">
+            <!-- Landing Page -->
+            <div class="landing padding-xl">
+                <!-- Description -->
+                <h1 class="anim-intro">AI Laboratory for Image Analysis</h1>
+                <h2 class="anim-intro">School Project</h2>
+                <!-- Keywords -->
+                <p class="resume light-grey keywords anim-intro">#python #deeplearning #image-analysis #image-processing #server #react #ui</p>
+                <p class="anim-intro resume">
+                    During my last engineering year as a student, in Paris, I created an
+                    <span class="color-blue">Artificial Intelligence Laboratory for Image Analysis (AILIA)</span>
+                    which is used to process images but also generate <span class="color-blue">Deep Learning</span> based predictions on them.
+                </p>
+                <p class="anim-intro resume">The goal was to measure the effect of image processing on state of the art models and to analyse the relevance of their predictions. The compatible models are <span class="color-blue">CNN</span> based models which work best for image manipulation (eg. ResNet, Inception, VGG etc.).</p>
+                <p class="anim-intro resume">This platform comes with a <span class="color-blue">RESTful API</span>, made using <span class="color-blue">Flask</span> and <span class="color-blue">ReactJS</span>.</p>
+                <!-- Information -->
+                <p class="anim-intro">
+                    <span class="when">When : <span class="light-grey">10.2020</span></span>
+                    <br />
+                    <span class="where">Where : <span class="light-grey">Paris, France</span></span>
+                    <br />
+                    <span class="duration">Duration : <span class="light-grey">2 weeks</span></span>
+                </p>
+
+                <!-- Logo -->
+                <a class="logo num1 anim-intro color-blue" href="http://89.234.183.178/" target="_blank">
+                    <i class="fab fa-chrome"></i>
+                </a>
+
+                <!-- Scroll Down -->
+                <div class="scroll">
+                    <a href="#context" class="arrow down dark-grey anim-intro"></a>
+                </div>
+            </div>
+            <!-- End Landing Page -->
+        </div>
+        <!-- End Home section -->
+
+        <!-- Project Work section -->
+        <div id="work">
+            <!-- Context section -->
+            <!-- Banner -->
+            <div id="context" class="banner-start bg-green">
+                <div class="text margin">
+                    <div class="margin-md">
+                        <img src="../medias/projects/ailia/ailia-logo-white.png" />
+                    </div>
+                </div>
+            </div>
+            <!-- End Banner -->
+
+            <!-- Sticky Navbar -->
+            <nav id="side-menu" class="transition sticky reveal">
+                <!-- change-opacity null-opacity-->
+                <div class="line transition bg-light-grey"></div>
+                <ul>
+                    <li>
+                        <a href="#workflow" class="transition dark-grey">Workflow</a>
+                    </li>
+                    <li>
+                        <a href="#upload" class="transition dark-grey">Upload</a>
+                    </li>
+                    <li>
+                        <a href="#process" class="transition dark-grey">Process</a>
+                    </li>
+                    <li>
+                        <a href="#predict" class="transition dark-grey">Predict</a>
+                    </li>
+                    <li>
+                        <a href="#analysis" class="transition dark-grey">Analysis</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End Navbar -->
+
+            <!-- Scroll up -->
+            <div class="scroll-up sticky">
+                <a href="#" class="arrow up light-grey change-color transition"></a>
+            </div>
+            <!-- End scroll up -->
+
+            <!-- Application section -->
+            <div id="workflow" class="text margin reveal">
+                <h1 class="margin-md">Visualize your Neural Architecture</h1>
+                <div class="margin-xl">
+                    <p>Understanding Neural Network can be hard at first. Thus, AILIA provides tools to process and classify unknown images in a minimal and unique application.</p>
+                </div>
+                <div class="margin-xl">
+                    <img src="../medias/projects/ailia/ailia.png" />
+                </div>
+            </div>
+            <div id="upload" class="text margin reveal">
+                <h2 class="margin-title">Import your images to the Cloud</h2>
+                <div class="margin-xl">
+                    <p>You can upload images from your computer, or provide an url to an online image. Import as many images as you want, they will appear in the central panel. The meta data and channel distribution appear in the right panel, to keep track of the selected image.</p>
+                </div>
+                <div class="margin-xl">
+                    <img src="../medias/projects/ailia/ailia-home.png" />
+                </div>
+                <div class="margin-xl">
+                    <p>To import an image, simply click on the «Import» button. You can also provide an URL to import it on AILIA platform.</p>
+                </div>
+                <div class="margin-xl">
+                    <img src="../medias/projects/ailia/ailia-image.png" />
+                </div>
+            </div>
+            <div id="process" class="text margin reveal">
+                <h2 class="margin-title">Use your favorite filters</h2>
+                <div class="margin-xl">
+                    <p>To trick state of the art models, you can play with filters or tones of the image. Changing a single parameter can totally change the model's output, so feel free to explore all combinations of color grading !</p>
+                </div>
+                <div class="margin-xl">
+                    <img src="../medias/projects/ailia/ailia-modified.png" />
+                </div>
+            </div>
+            <div id="predict" class="text margin reveal">
+                <h2 class="margin-title">Classify your images</h2>
+                <div class="margin-xl">
+                    <p>
+                        The final step is to classify the modified image. 
+                        Thus, AILIA provides state of the art models, trained on the ubiquitous dataset ImageNet containing over 1,000 classes.
+                    </p>
+                    <p>
+                        To select the model that will be used for classification tasks, click on the «Select Model» button.
+                    </p>
+                </div>
+                <div class="margin-xl">
+                    <img src="../medias/projects/ailia/ailia-models.png" />
+                </div>
+                <div class="margin-xl">
+                    <p>
+                        Once selected, you will have an overview of the model and the dataset used during training.
+                        You will also find the original paper that describes the model's architecture.
+                    </p>
+                </div>
+                <div class="margin-xl">
+                    <img src="../medias/projects/ailia/ailia-model.png" />
+                </div>
+                <div class="margin-xl">
+                    <p>
+                        To classify your image, click on the «Predict» button. The label will appear on the right, and the corresponding name under the button.
+                    </p>
+                </div>
+                <div class="margin-xl">
+                    <img src="../medias/projects/ailia/ailia-prediction.png" />
+                </div>
+            </div>
+            <div id="analysis" class="text margin reveal">
+                <h2 class="margin-title">Visualize the architecture</h2>
+                <div class="margin-xl">
+                    <p>
+                        To visualize the most important features (i.e. the feature extracted on the last convolutional layer), you can choose an analysis method.
+                        These methods will highlight area on the image that helped the model to classify the image.
+                    </p>
+                </div>
+                <div class="margin-xl">
+                    <img src="../medias/projects/ailia/ailia-analysis.png" />
+                </div>
+                <div class="margin-xl">
+                    <p>
+                        The «Target Label» is used to extract features regarding a specific label. For example, 
+                        running a «Class Activation Map» (CAM) on an image classified as "Green Snake" (55) 
+                        will highlight regions on the input image that best match a "Green Snake".
+                        Also, choosing another label like "knot" (616) will extract features that best corresponds to a "Knot" in the input image.                    </p>
+                </div>
+                <div class="margin-xl">
+                    <img src="../medias/projects/ailia/ailia-analysis2.png" />
+                </div>
+            </div>
+            <div id="close" class="text margin reveal">
+                <h2 class="margin-title">Start Again</h2>
+                <div class="margin-xl">
+                    <p>
+                        Discard your modifications, and upload a new image ! Click on the upper right cross button on the active content to delete it. Then, click on the «Close» button to confirm. 
+                    </p>
+                </div>
+                <div class="margin-xl">
+                    <img src="../medias/projects/ailia/ailia-close.png" />
+                </div>
+            </div>
+
+            <!-- Banner -->
+            <div id="outcomes" class="banner-end bg-green mask-color">
+                <div class="text margin">
+                    <h2 class="white margin-title">Outcomes</h2>
+                    <p class="margin-xl white">This project was the opportunity to focus on interesting image processing tools, but also on a minimal and modern UI to showcase the project.</p>
+                </div>
+            </div>
+            <!-- End Banner -->
+        </div>
+        <!-- End Project Work section -->
+
+        <!-- Overlay effects -->
+        <script src="../static/js/scroll.js"></script>
+        <!-- Reveal on scroll -->
+        <script src="../static/js/reveal.js"></script>
+        <!-- Navbar Hamburger -->
+        <script src="../static/js/navbar.js"></script>
+    </body>
+</html>
