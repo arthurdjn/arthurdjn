@@ -6,6 +6,8 @@
 I am a deep learning engineer in computer vision and natural language processing. GEOINT / OSINT.  
 I also develop full stack applications with *cool* designs.
 
-[![My Skills](https://skillicons.dev/icons?i=python,pytorch,tensorflow,fastapi,flask,react,ts,js,html,css,tailwind,mui,postgres,redis,mongodb,docker,kubernetes)](https://skillicons.dev)
+![My Skills](https://skillicons.dev/icons?i=python,pytorch,tensorflow,fastapi,flask,react,ts,js,html,css,tailwind,mui)
+
+![My Skills2](https://skillicons.dev/icons?i=postgres,redis,mongodb,docker,kubernetes)
 
 ![github stats](https://github-readme-stats.vercel.app/api?username=arthurdjn&show_icons=true)
