@@ -3,7 +3,7 @@
 
 ## hei, I'm arthurdjn 🍁
 
-Hello world! I'm Arthur Dujardin, a **deep learning engineer** specialized in computer vision based in Paris, FR.
+I'm Arthur Dujardin, a **deep learning engineer** specialized in computer vision based in Paris, FR.
 I enjoy experimenting from latest research papers and designing engaging and creative AI applications.
 
 I am interested in computer vision, natural language processing, reinforcement learning, and generative models applied to
